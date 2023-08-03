@@ -1,0 +1,13 @@
+<!--  наследуемся от шаблона base.html -->
+{% extends 'layout/base.html' %} 
+ 
+<!-- Название у нас будет proudcts -->
+{% block title %}
+Products
+{% endblock title %}
+ 
+<!-- В контенте на странице мы выводим все товары -->
+{% block content %}
+<h1>Все заказы</h1>
+{{ orders }}
+{% endblock content %}
